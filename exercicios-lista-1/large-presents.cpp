@@ -33,6 +33,7 @@ void check(){
     sort(gifties.begin(), gifties.begin()+k_allowed, [](auto v1, auto v2){
         return v1.second < v2.second;
     });
+    reverse(gifties.begin(), gifties.end());
     for(int i = 0; i<k_allowed-1; i++){
         cout<<gifties[i].second<<" ";
     }
